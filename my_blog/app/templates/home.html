@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if title%}
-         <title>Flask Blog -{{title}}</title>
-    {% else %}
-         <title> Flask Blog</title>
-    {% endif %}
-</head>
-<body>
+{% extends "layout.html" %}
+{% block  content %}
     {% for post in posts %}
-        <h1>{{ post.title}}</h1>
-        <p> By {{post.auther}} on {{post.date_poster}}</p>
-        <p> {{ post.content }}</p>
+            <h1>{{ post.title}}</h1>
+            <p> By {{post.auther}} on {{post.date_poster}}</p>
+            <p> {{ post.content   }}</p>
 
     {% endfor %}
+{% endblock  content %}
     
-</body>
-</html>
