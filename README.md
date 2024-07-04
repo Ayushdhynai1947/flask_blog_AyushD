@@ -4,4 +4,15 @@
 
  # pip install flask 
  # pip install flask_restful
- # pip install 
+
+
+ # pip install pillow 
+  for resize the image we use this
+  
+
+
+
+
+
+
+
